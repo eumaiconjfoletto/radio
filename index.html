@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rádio Demo FM</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins,sans-serif;
+}
+
+body{
+background:#090909;
+color:white;
+}
+
+a{
+text-decoration:none;
+color:white;
+}
+
+.navbar{
+background:#111;
+border-bottom:3px solid #ff0033;
+}
+
+.logo{
+font-size:32px;
+font-weight:800;
+color:#ff0033;
+}
+
+.hero{
+
+height:92vh;
+
+background:
+linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.75)),
+url("https://images.unsplash.com/photo-1516280440614-37939bbacd81?w=1600") center/cover;
+
+display:flex;
+align-items:center;
+
+}
+
+.hero h1{
+
+font-size:64px;
+font-weight:800;
+
+}
+
+.hero p{
+
+font-size:20px;
+color:#ddd;
+
+}
+
+.btn-radio{
+
+background:#ff0033;
+border:none;
+padding:15px 35px;
+border-radius:50px;
+font-weight:bold;
+font-size:18px;
+transition:.3s;
+
+}
+
+.btn-radio:hover{
+
+transform:scale(1.05);
+background:#ff2957;
+
+}
+
+.player{
+
+background:#151515;
+padding:30px;
+border-radius:20px;
+margin-top:-70px;
+box-shadow:0 15px 40px rgba(0,0,0,.45);
+
+}
+
+.player h3{
+
+font-size:22px;
+margin-bottom:15px;
+
+}
+
+.play{
+
+width:75px;
+height:75px;
+border-radius:50%;
+background:#ff0033;
+border:none;
+font-size:28px;
+color:white;
+
+}
+
+.status{
+
+display:inline-block;
+background:#00cc66;
+padding:5px 15px;
+border-radius:30px;
+font-size:14px;
+
+}
+
+.section-title{
+
+font-size:38px;
+font-weight:700;
+margin-bottom:35px;
+
+}
+
+.card-news{
+
+background:#181818;
+border:none;
+border-radius:18px;
+overflow:hidden;
+transition:.35s;
+
+}
+
+.card-news:hover{
+
+transform:translateY(-8px);
+
+}
+
+.card-news img{
+
+height:200px;
+object-fit:cover;
+
+}
+
+.card-body{
+
+color:white;
+
+}
+
+.schedule{
+
+background:#111;
+padding:18px;
+border-radius:15px;
+margin-bottom:15px;
+display:flex;
+justify-content:space-between;
+
+}
+
+footer{
+
+background:#050505;
+padding:50px 0;
+margin-top:80px;
+
+}
+
+.social i{
+
+font-size:28px;
+margin:15px;
+transition:.3s;
+
+}
+
+.social i:hover{
+
+color:#ff0033;
+transform:scale(1.2);
+
+}
+
+    .card{
+    transition:.35s;
+    border-radius:18px;
+    overflow:hidden;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 15px 40px rgba(255,0,60,.25)!important;
+}
+
+.card img{
+    height:220px;
+    object-fit:cover;
+}
+
+.card-title,
+.card h5{
+    line-height:1.4;
+}
+
+.badge{
+    font-weight:500;
+    padding:8px 14px;
+    border-radius:30px;
+}
+
+
+</style>
+
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark">
+
+<div class="container">
+
+<a class="navbar-brand logo" href="#">RADIO FM</a>
+
+<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="menu">
+
+<ul class="navbar-nav ms-auto">
+
+<li class="nav-item"><a class="nav-link" href="ct.html">Home</a></li>
+<li class="nav-item"><a class="nav-link" href="ct.html">Programação</a></li>
+<li class="nav-item"><a class="nav-link" href="ct.html">Notícias</a></li>
+<li class="nav-item"><a class="nav-link" href="ct.html">Contato</a></li>
+
+</ul>
+
+</div>
+
+</div>
+
+</nav>
+
+<section class="hero">
+
+<div class="container">
+
+<div class="row">
+
+<div class="col-lg-7">
+
+<h1>A trilha sonora do seu dia.</h1>
+
+<p>
+Música, entretenimento, informação e muito mais.
+Uma rádio moderna para quem ama boa música.
+</p>
+
+<button class="btn btn-radio" onclick="abrirPlayer()">
+    <i class="fa-solid fa-headphones"></i>
+    Ouça Agora
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="container py-5">
+
+<h2 class="section-title">
+
+Programação
+
+</h2>
+
+<div class="schedule">
+
+<span>06:00</span>
+
+<span>Café com Música</span>
+
+</div>
+
+<div class="schedule">
+
+<span>10:00</span>
+
+<span>Hits da Manhã</span>
+
+</div>
+
+<div class="schedule">
+
+<span>14:00</span>
+
+<span>Top 40</span>
+
+</div>
+
+<div class="schedule">
+
+<span>18:00</span>
+
+<span>FlashBack</span>
+
+</div>
+
+<div class="schedule">
+
+<span>21:00</span>
+
+<span>Night Session</span>
+
+</div>
+
+</section>
+
+<section class="container">
+
+<h2 class="section-title">
+
+Últimas Notícias
+
+</h2>
+
+<div class="row g-4">
+
+<div class="col-lg-4">
+
+<div class="card card-news">
+
+<img src="https://picsum.photos/600/400?1">
+
+<div class="card-body">
+
+<h5>Novo festival reúne milhares de pessoas.</h5>
+
+<p>
+
+Confira tudo que aconteceu durante o evento.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-lg-4">
+
+<div class="card card-news">
+
+<img src="https://picsum.photos/600/400?2">
+
+<div class="card-body">
+
+<h5>Top 10 músicas mais tocadas.</h5>
+
+<p>
+
+Veja o ranking desta semana.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-lg-4">
+
+<div class="card card-news">
+
+<img src="https://picsum.photos/600/400?3">
+
+<div class="card-body">
+
+<h5>Entrevista exclusiva.</h5>
+
+<p>
+
+Conheça os bastidores da música.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<div class="container text-center">
+
+<h3 class="logo">
+
+RADIO FM
+
+</h3>
+
+<p>
+
+A melhor programação da internet.
+
+</p>
+
+<div class="social">
+
+<i class="fab fa-instagram"></i>
+
+<i class="fab fa-facebook"></i>
+
+<i class="fab fa-youtube"></i>
+
+<i class="fab fa-x-twitter"></i>
+
+</div>
+
+<p class="mt-4">
+
+© 2026 Rádio Demo FM
+
+</p>
+
+</div>
+
+</footer>
+
+<script>
+
+const STREAM_URL="https://usa13.fastcast4u.com/proxy/radioativa?mp=/1";
+
+const audio=document.getElementById("audio");
+
+audio.src=STREAM_URL;
+
+audio.volume=.5;
+
+document.getElementById("volume").value=50;
+
+document.getElementById("volume").oninput=function(){
+
+audio.volume=this.value/100;
+
+}
+
+const btn=document.getElementById("play");
+
+let tocando=false;
+
+btn.onclick=function(){
+
+if(!tocando){
+
+audio.play();
+
+btn.innerHTML='<i class="fa-solid fa-pause"></i>';
+
+tocando=true;
+
+}else{
+
+audio.pause();
+
+btn.innerHTML='<i class="fa-solid fa-play"></i>';
+
+tocando=false;
+
+}
+
+}
+
+const musicas=[
+
+"Imagine Dragons • Believer",
+
+"Coldplay • Adventure of a Lifetime",
+
+"The Weeknd • Blinding Lights",
+
+"Dua Lipa • Houdini",
+
+"Maroon 5 • Sugar"
+
+];
+
+setInterval(()=>{
+
+document.getElementById("music").innerHTML=
+
+musicas[Math.floor(Math.random()*musicas.length)];
+
+},8000);
+
+function abrirPlayer() {
+
+    window.open(
+        "player2.html",
+        "RadioPlayer",
+        "width=430,height=720,resizable=yes"
+    );
+
+}
+
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
