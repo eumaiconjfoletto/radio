@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Início • Rádio FM</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<link rel="stylesheet" href="../assets/css/variables.css">
+<link rel="stylesheet" href="../assets/css/base.css">
+<link rel="stylesheet" href="../assets/css/pages.css">
+<script src="../assets/js/theme.js" data-src="../data/theme.json"></script>
+</head>
+<body>
+<div class="hero">
+  <div class="banner-carousel" id="bannerCarousel"></div>
+  <div class="badges">
+    <span class="badge"><i class="fa-solid fa-tower-broadcast"></i> AO VIVO 24H</span>
+    <span class="badge"><i class="fa-solid fa-wifi"></i> Streaming online</span>
+    <span class="badge"><i class="fa-solid fa-calendar-days"></i> Programação variada</span>
+  </div>
+</div>
+<div class="onair" id="onairWrap"></div>
+<div class="section">
+  <div class="section-head"><h2>Navegue pelo site</h2></div>
+  <div class="grid">
+    <a class="tile" href="programacao.html" target="_top" onclick="event.preventDefault();parent.loadPage&&parent.loadPage('programacao.html')">
+      <i class="fa-solid fa-calendar-days"></i><h3>Programação</h3><p>Veja os horários e programas do dia</p>
+    </a>
+    <a class="tile" href="noticias.html" target="_top" onclick="event.preventDefault();parent.loadPage&&parent.loadPage('noticias.html')">
+      <i class="fa-solid fa-newspaper"></i><h3>Notícias</h3><p>Fique por dentro das novidades</p>
+    </a>
+    <a class="tile" href="sobre.html" target="_top" onclick="event.preventDefault();parent.loadPage&&parent.loadPage('sobre.html')">
+      <i class="fa-solid fa-circle-info"></i><h3>Sobre nós</h3><p>Conheça a história da emissora</p>
+    </a>
+    <a class="tile" href="contato.html" target="_top" onclick="event.preventDefault();parent.loadPage&&parent.loadPage('contato.html')">
+      <i class="fa-solid fa-envelope"></i><h3>Contato</h3><p>Fale com a nossa equipe</p>
+    </a>
+  </div>
+</div>
+<div class="section" id="newsSection" style="display:none;">
+  <div class="section-head">
+    <h2>Últimas notícias</h2>
+    <a href="noticias.html" target="_top" onclick="event.preventDefault();parent.loadPage&&parent.loadPage('noticias.html')">Ver todas <i class="fa-solid fa-arrow-right"></i></a>
+  </div>
+  <div class="news-mini-grid" id="newsPreview"></div>
+</div>
+<script src="../assets/js/utils.js"></script>
+<script src="../assets/js/pages/home.js"></script>
+</body>
+</html>
