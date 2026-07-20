@@ -1,2 +1,1 @@
-# radio
-projeto para site de web rádio e rádio fm
+Teste para demonstração de site em PHP com área administrativa atrelada e controlando as funções.
