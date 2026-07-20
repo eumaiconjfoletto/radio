@@ -1,0 +1,27 @@
+:root{
+  --accent:#ff0033;
+  --accent-dim:#ff003355;
+  --accent-rgb:255,0,51;
+  --on-accent:#ffffff;
+  --bg-0:#0a0a0a;
+  --bg-1:#161616;
+  --bg-2:#1e1e1e;
+  --text:#ffffff;
+  --text-dim:#9a9a9a;
+  --border:rgba(255,255,255,.08);
+  --radius-lg:28px;
+  --radius-md:18px;
+  --radius-sm:10px;
+  --font:'Poppins',sans-serif;
+  --safe-top:env(safe-area-inset-top,0px);
+  --safe-bottom:env(safe-area-inset-bottom,0px);
+  --safe-left:env(safe-area-inset-left,0px);
+  --safe-right:env(safe-area-inset-right,0px);
+}
+html[data-theme="azul"]{--accent:#2979ff;--accent-dim:#2979ff55;--accent-rgb:41,121,255;--on-accent:#fff}
+html[data-theme="verde"]{--accent:#00c853;--accent-dim:#00c85355;--accent-rgb:0,200,83;--on-accent:#fff}
+html[data-theme="amarelo"]{--accent:#ffc400;--accent-dim:#ffc40055;--accent-rgb:255,196,0;--on-accent:#1a1a1a}
+html[data-theme="dourado"]{--accent:#d4af37;--accent-dim:#d4af3755;--accent-rgb:212,175,55;--on-accent:#1a1a1a}
+html[data-theme="roxo"]{--accent:#9c27b0;--accent-dim:#9c27b055;--accent-rgb:156,39,176;--on-accent:#fff}
+html[data-theme="laranja"]{--accent:#ff6d00;--accent-dim:#ff6d0055;--accent-rgb:255,109,0;--on-accent:#fff}
+html[data-theme="rosa"]{--accent:#ff2d78;--accent-dim:#ff2d7855;--accent-rgb:255,45,120;--on-accent:#fff}
