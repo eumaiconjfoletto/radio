@@ -1,0 +1,29 @@
+{
+    "banners": [
+        {
+            "id": "mrnkl8ww2jtl",
+            "imagem": "../uploads/6a58e052eaf2d.jpg",
+            "titulo": "Banner teste",
+            "subtitulo": "Teste de promoção",
+            "link": "",
+            "ativo": true
+        },
+        {
+            "id": "mrnklmwsok20",
+            "imagem": "../uploads/6a58e057d9c77.jpg",
+            "titulo": "Banner Teste 02",
+            "subtitulo": "Promoção teste",
+            "link": "",
+            "ativo": true
+        },
+        {
+            "id": "mrnkm8hclq2q",
+            "imagem": "../uploads/6a58e05b60d55.jpg",
+            "titulo": "Teste carrossel",
+            "subtitulo": "Teste de banners no carrossel",
+            "link": "",
+            "ativo": true
+        }
+    ],
+    "transicao": "fade"
+}

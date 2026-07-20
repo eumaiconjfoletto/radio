@@ -1,0 +1,125 @@
+{
+    "programas": [
+        {
+            "id": "1",
+            "horario": "05:00 - 12:00",
+            "nome": "Manhã FM",
+            "apresentador": "Equipe Rádio FM",
+            "dias": [
+                1,
+                2,
+                3,
+                4,
+                5
+            ],
+            "cor": "#ffa200",
+            "imagem": "",
+            "descricao": ""
+        },
+        {
+            "id": "2",
+            "horario": "12:00 - 14:00",
+            "nome": "Hora do Almoço",
+            "apresentador": "Equipe Rádio FM",
+            "dias": [
+                1,
+                2,
+                3,
+                4,
+                5
+            ],
+            "cor": "#9af9d0",
+            "imagem": "",
+            "descricao": ""
+        },
+        {
+            "id": "3",
+            "horario": "05:00 - 23:59",
+            "nome": "Fim de Semana FM",
+            "apresentador": "Equipe Rádio FM",
+            "dias": [
+                0,
+                6
+            ],
+            "cor": "#3700ff",
+            "imagem": "",
+            "descricao": ""
+        },
+        {
+            "id": "mrnhsjgj1are",
+            "horario": "sef",
+            "nome": "sdf",
+            "apresentador": "sdf",
+            "dias": [
+                1
+            ],
+            "cor": ""
+        },
+        {
+            "id": "mrninu3dqz4a",
+            "nome": "Programa livre",
+            "apresentador": "Auto DJ",
+            "dias": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+            ],
+            "horario": "00:00 - 05:00",
+            "imagem": "../uploads/6a58eb620e9c2.png",
+            "descricao": "",
+            "cor": "#00ff59"
+        },
+        {
+            "id": "mrnydpv1c5cc",
+            "nome": "Fim de tarde",
+            "apresentador": "Rádio Dj",
+            "imagem": "",
+            "descricao": "",
+            "dias": [
+                1,
+                2,
+                3,
+                4,
+                5
+            ],
+            "horario": "16:00 - 19:00",
+            "cor": "#ff0033"
+        },
+        {
+            "id": "mrnygc39forp",
+            "nome": "Rádio da Tarde",
+            "apresentador": "Radio DJ",
+            "imagem": "",
+            "descricao": "",
+            "dias": [
+                1,
+                2,
+                3,
+                4,
+                5
+            ],
+            "horario": "14:00 - 16:00",
+            "cor": "#fbff00"
+        },
+        {
+            "id": "mrnyhji58ad7",
+            "nome": "Musicas da noite",
+            "apresentador": "Radio DJ",
+            "imagem": "",
+            "descricao": "",
+            "dias": [
+                1,
+                2,
+                3,
+                4,
+                5
+            ],
+            "horario": "19:00 - 23:59",
+            "cor": "#7a4852"
+        }
+    ]
+}

@@ -1,0 +1,36 @@
+{
+    "usuarios": [
+        {
+            "id": "mrnq1jpqa699",
+            "username": "maicon",
+            "permissoes": [
+                "streaming",
+                "programacao",
+                "noticias",
+                "banners",
+                "site",
+                "tema",
+                "usuarios",
+                "automacao",
+                "locutor"
+            ],
+            "password_hash": "$2y$10$Oj3K4V1KRmfnSFtrnPFTpuJ82SiHaVuEwrcghlAvrZkHjABrrJrCW"
+        },
+        {
+            "id": "mrnq1uoqhcgq",
+            "username": "redacao",
+            "permissoes": [
+                "noticias"
+            ],
+            "password_hash": "$2y$10$kcSKMn0XkJ0A.adq3IQbk.Ypmd269H/uMaaSqmR2HAMFuIIHey1g6"
+        },
+        {
+            "id": "mrnq2co6snzo",
+            "username": "programacao",
+            "permissoes": [
+                "programacao"
+            ],
+            "password_hash": "$2y$10$jjNJwX1xMFB2yLKhaOVnX..IFj.RMsKl/e3yJ8Ho9WvhrSxxJ/MlS"
+        }
+    ]
+}

@@ -1,0 +1,36 @@
+{
+    "noticias": [
+        {
+            "id": "mrni0ut90ubv",
+            "titulo": "Teste3",
+            "resumo": "teste3",
+            "conteudo": "teste3",
+            "data": "2026-07-16",
+            "imagem": "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=700"
+        },
+        {
+            "id": "mrnhtk628y8d",
+            "titulo": "teste",
+            "resumo": "teste",
+            "conteudo": "teste",
+            "data": "2026-07-16",
+            "imagem": "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=700"
+        },
+        {
+            "id": "mrnht1ybfwmi",
+            "titulo": "teste2",
+            "resumo": "teste2",
+            "conteudo": "teste2",
+            "data": "2026-07-16",
+            "imagem": "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=700"
+        },
+        {
+            "id": "1",
+            "titulo": "Bem-vindo ao novo site da Rádio FM",
+            "resumo": "Confira as novidades da nossa programação e do nosso player.",
+            "conteudo": "Este é um exemplo de notícia. Edite ou remova pelo painel de administração.",
+            "data": "2026-07-13",
+            "imagem": "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=700"
+        }
+    ]
+}
